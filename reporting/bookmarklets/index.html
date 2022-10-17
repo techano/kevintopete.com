@@ -31,7 +31,7 @@
         <ul>
             <li><a href="javascript:fetch(`https://kevintopete.com/reporting/bookmarklets/js/disable_extensions.js`).then(data=>{data.text().then(text=>{eval(text)})});">Disable extensions</a>, to use this drag it to your bookmarks and go to chrome webstore,
                 once there click it.</li>
-            <li><a href="javascript:fetch(`https://kevintopete.com/reporting/bookmarklets/js/enable_page_editing.js`).then(data=>{data.text().then(text=>{eval(text)})});">Enable page editing</a>, to use drag it to your bookmarks and click on it on any page.
+            <li><a href="javascript:function confirmbox(){if(confirm("This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will work on any site.")){javascript:document.body.contentEditable="true";document.designMode="on",window.alert("Script has been run. Click anywhere to edit text")}else window.alert("Script Terminated")}confirmbox();">Enable page editing</a>, to use drag it to your bookmarks and click on it on any page.
                 This will enable creation mode on the browser.</li>
         </ul>
 
