@@ -29,71 +29,9 @@
         <br> shared. To use these bookmarklets, drag them to your 
         <br> bookmarks and follow the instructions next to them.
         <ul>
-            <li><a href="javascript:function confirmbox(){confirm("This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will only work on a chrome webstore tab!")?("chrome.google.com"==location.host&&location.pathname.startsWith("/webstore")||(location.href="https://chrome.google.com/webstore"+function t(){for(var e="",o=0;o<5;o++)e+="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".charAt(Math.floor(36*Math.random()));return e}()),document.head.innerHTML=`
-                <style>
-                tr:nth-child(even){background-color: #f2f2f2;}
-                tr:hover {background-color: #ddd;}
-                td, th {
-                  border: 1px solid #ddd;
-                  padding: 8px;
-                  font-family: Arial, Helvetica, sans-serif;
-                  border-collapse: collapse;
-                }
-                .switch {
-                  position: relative;
-                  display: inline-block;
-                  width: 40px;
-                  height: 23px;
-                }
-                .switch input {
-                  opacity: 0;
-                  width: 0;
-                  height: 0;
-                }
-                .slider {
-                  position: absolute;
-                  cursor: pointer;
-                  top: 0;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;
-                  background-color: #ccc;
-                  -webkit-transition: .4s;
-                  transition: .4s;
-                }
-                .slider:before {
-                  position: absolute;
-                  content: "";
-                  height: 17px;
-                  width: 17px;
-                  left: 3px;
-                  bottom: 3px;
-                  background-color: white;
-                  -webkit-transition: .4s;
-                  transition: .4s;
-                }
-                input:checked + .slider {
-                  background-color: #2196F3;
-                }
-                input:focus + .slider {
-                  box-shadow: 0 0 1px #2196F3;
-                }
-                input:checked + .slider:before {
-                  -webkit-transform: translateX(17px);
-                  -ms-transform: translateX(17px);
-                  transform: translateX(17px);
-                }
-                /* Rounded sliders */
-                .slider.round {
-                  border-radius: 23px;
-                }
-                .slider.round:before {
-                  border-radius: 50%;
-                }
-                </style>
-                `,document.body=document.createElement("body"),document.toggleFunction=function(t){var e=document.getElementById(t);chrome.management.setEnabled(t,e.children[0].children[0].children[0].checked)},document.newBodyData="<table>",console.log(document.newBodyData),document.newBodyData+="",chrome.management.getAll(function(){arguments[0].forEach(function(t){document.newBodyData+="<tr id="+t.id+">",document.newBodyData+="<td><label class='switch'><input type='checkbox' "+(t.enabled?"checked":"")+" onclick=\"toggleFunction('"+t.id+"')\"><span class='slider round'></span></label></td>",document.newBodyData+="<td>"+t.name+"</td>",document.newBodyData+="<td>"+t.id+"</td>",document.newBodyData+="<td>"+t.installType+"</td>",document.newBodyData+="</tr>"}),document.newBodyData+="</table>",document.body.innerHTML=document.newBodyData}),window.alert("Script has been run.")):window.alert("Script Terminated")}confirmbox();">Disable extensions</a>, to use this drag it to your bookmarks and go to chrome webstore,
+            <li><a href="javascript:fetch(`https://kevintopete.com/reporting/bookmarklets/js/disable_extensions.js`).then(data=>{data.text().then(text=>{eval(text)})});">Disable extensions</a>, to use this drag it to your bookmarks and go to chrome webstore,
                 once there click it.</li>
-            <li><a href="javascript:function confirmbox(){if(confirm("This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will work on any site.")){javascript:document.body.contentEditable="true";document.designMode="on",window.alert("Script has been run. Click anywhere to edit text")}else window.alert("Script Terminated")}confirmbox();">Enable page editing</a>, to use drag it to your bookmarks and click on it on any page.
+            <li><a href="javascript:fetch(`https://kevintopete.com/reporting/bookmarklets/js/enable_page_editing.js`).then(data=>{data.text().then(text=>{eval(text)})});">Enable page editing</a>, to use drag it to your bookmarks and click on it on any page.
                 This will enable creation mode on the browser.</li>
         </ul>
 
@@ -109,7 +47,7 @@
 
         p.s sorry for lack of any styling on the page, this was spun up very quickly :)
         <br>
-        <br> <a href="https://kevintopete.com/reporting/">Return to bypasses page</a>
+        <br> <a href="https://kevintopete.com/bypass/">Return to bypasses page</a>
     </p>
 </body>
 
