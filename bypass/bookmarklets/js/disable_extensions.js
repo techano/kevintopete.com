@@ -1,6 +1,5 @@
 function confirmbox() {
-    if (confirm("This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click ok to continue running script. This will only work on a chrome webstore tab!")) {
-        window.alert("script has been run.");
+    if (confirm("This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will only work on a chrome webstore tab!")) {
         function m() {
             var r='',c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
             for ( var i = 0; i < 5; i++ ) {
@@ -106,6 +105,7 @@ function confirmbox() {
             document.newBodyData += "</table>"
             document.body.innerHTML = document.newBodyData;
         })
+        window.alert("Script has been run.");
     } else {
         window.alert("Script Terminated");
     }
