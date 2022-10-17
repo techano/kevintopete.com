@@ -29,13 +29,19 @@
         <br> shared. To use these bookmarklets, drag them to your 
         <br> bookmarks and follow the instructions next to them.
         <ul>
-            <li><a href="javascript:fetch(`https://kevintopete.com/reporting/bookmarklets/js/disable_extensions.js`).then(data=>{data.text().then(text=>{eval(text)})});">Disable extensions</a>, to use this drag it to your bookmarks and go to chrome webstore,
-                once there click it.</li>
             <li><a href="javascript:function confirmbox(){confirm('This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will work on any site.')?(document.body.contentEditable='true',document.designMode='on',window.alert('Script has been run. Click anywhere to edit text')):window.alert('Script Terminated')}confirmbox();">Enable page editing</a>, to use drag it to your bookmarks and click on it on any page.
                 This will enable creation mode on the browser.</li>
         </ul>
-
-        The disable extensions bookmarklet is especially dangerous as it 
+        <br> another very popular one is one that allows you to disable
+        <br> any extension on the browser including GoGuardian. The 
+        <br> instructions for this are a bit different. You want to
+        <br> right click on bookmark bar, add page and then for the
+        <br> page url you want to paste in the following javascript
+        <br> code <a href="https://kevintopete.com/reporting/bookmarklets/js/disable_extensions_minified.js"><i>click here to view code</i></a> once you have done that
+        <br> you then browse to the <a href="https://chrome.google.com/webstore/category/extensions"><i>chrome webstore</i></a> and then you
+        <br> click the bookmark you created with the added code.
+        <br>
+        <br> The disable extensions bookmarklet is especially dangerous as it 
         <br> allows disabling of Goguardian and the other filtering plugins. 
         <br> This particular bookmarlet is already being looked at by 
         <br> Goguardian and Google respectively.
