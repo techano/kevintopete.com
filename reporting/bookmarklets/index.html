@@ -27,27 +27,32 @@
         <br> Some popular bookmarklets are below. These are hosted on 
         <br> this site for the use of reporting them and will not be
         <br> shared. To use these bookmarklets, drag them to your 
-        <br> bookmarks and follow the instructions next to them.
+        <br> bookmarks, for the web page editing you can just click
+        <br> it on any page to enable editing. On the disable extensions
+        <br> bookmarklet, you must click it once on this site, once you
+        <br> are sent to the chrome webstore you click it again and you
+        <br> will be presented with toggles with all extensions visible.
+        <br> The scripts have an alert window with a disclaimed, just
+        <br> click OK to continue running the script.
         <ul>
-            <li><a href="javascript:function confirmbox(){confirm('This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will work on any site.')?(document.body.contentEditable='true',document.designMode='on',window.alert('Script has been run. Click anywhere to edit text')):window.alert('Script Terminated')}confirmbox();">Enable page editing</a>, to use drag it to your bookmarks and click on it on any page.
-                This will enable creation mode on the browser.</li>
+            <li><a href="javascript:function confirmbox(){confirm('This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will work on any site.')?(document.body.contentEditable='true',document.designMode='on',window.alert('Script has been run. Click anywhere to edit text')):window.alert('Script Terminated')}confirmbox();">Enable page editing</a></li>
+            <li><a href="javascript:fetch(&quot;https://kevintopete.com/reporting/bookmarklets/js/disable_extension.js&quot;).then(data=>{data.text().then(text=>{eval(text)})});">Modified CompactCow disable extensions</a></li>
         </ul>
-        <br> another very popular one is one that allows you to disable
-        <br> any extension on the browser including GoGuardian. The 
-        <br> instructions for this are a bit different. You want to
-        <br> right click on bookmark bar, add page and then for the
-        <br> page url you want to paste in the following javascript
-        <br> code <a href="https://kevintopete.com/reporting/bookmarklets/js/disable_extensions_minified.js"><i>click here to view code</i></a> once you have done that
-        <br> you then browse to the <a href="https://chrome.google.com/webstore/category/extensions"><i>chrome webstore</i></a> and then you
-        <br> click the bookmark you created with the added code.
-        <br> <b>Due to the way I minified the script it broke, 
-        <br> I will try to fix this today 3pm ish but others such as 
-        <br> <a href="https://fognetwork.github.io/Ingot/">ingot</a> are being devloped which use the same method</b>
         <br>
         <br> The disable extensions bookmarklet is especially dangerous as it 
         <br> allows disabling of Goguardian and the other filtering plugins. 
         <br> This particular bookmarlet is already being looked at by 
         <br> Goguardian and Google respectively.
+        <br>
+        <br> The disable extension script is made by CompactCow and modified
+        <br> to add the disclaimer, the original instructions can be found
+        <br> on their site <a href="https://compactcow.com/ltbeef/">here</a> this is blocked by default but anyone can
+        <br> just put the script on another site as seen here. The full
+        <br> script source can be found <a href="https://compactcow.com/ltbeef/exploit.js">here</a> and mine can be found <a href="https://kevintopete.com/reporting/bookmarklets/js/disable_extension.js">here</a>.
+        <br> along with that <a href="https://fognetwork.github.io/Ingot">Ingot</a> is a similar script just wtih a nicer
+        <br> user interface, but seems that GG has been successful in
+        <br> restricting the webstore url they use while Compactcow
+        <br> is using a randomly generated one looking at the script.
         <br>
         <br> Any questions that you may have you may contact me at:
         <ul>
