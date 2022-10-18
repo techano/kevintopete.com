@@ -12,19 +12,7 @@
     <h1>Bookmarlet information</h1>
     <p>
         Bookmarklets are pieces of javascript that are ran as a bookmark,
-        <br> the main way to fix this type of bypass is to take the following
-        <br> steps on the districts Google Admin Console:
-        <ol>
-            <li>Sign in to Google Admin Console</li>
-            <li>Go to <a href="https://admin.google.com/ac/chrome/settings/user">Devices > Chrome > Settings</a>.</li>
-            <li>Select the OU group the students are in on the left</li>
-            <li>Scroll to <b>URL blocking</b>.</li>
-            <li>Add the line <i>javascript://*</i></li>
-        </ol>
-
-        The blocking information was sourced from: <a href="https://xfanatical.com/blog/block-student-bookmarklets">Xfanatical</a>
-        <br>
-        <br> Some popular bookmarklets are below. These are hosted on 
+        <br> some popular bookmarklets are below. These are hosted on 
         <br> this site for the use of reporting them and will not be
         <br> shared. To use these bookmarklets, drag them to your 
         <br> bookmarks, for the web page editing you can just click
@@ -56,6 +44,25 @@
         <br> bookmarklet above just has the script as a one liner
         <br> instead of a fetch due to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> restrictions in place by
         <br> most sites.
+        <br>
+        <br> Currently theres no direct fix for this, only partial fixes
+        <br> one that will fix one liner bookmarklets such as the web
+        <br> page editing one can be done by taking the following steps
+        <br> in Google Admin Console:
+        <ol>
+            <li>Sign in to Google Admin Console</li>
+            <li>Go to <a href="https://admin.google.com/ac/chrome/settings/user">Devices > Chrome > Settings</a>.</li>
+            <li>Select the OU group the students are in on the left</li>
+            <li>Scroll to <b>URL blocking</b>.</li>
+            <li>Add the line <i>javascript://*</i></li>
+        </ol>
+        <br> There is currently one fix when it comes to bookmarklets
+        <br> which fetch their script such as the one to disable
+        <br> extensions, this is to use chrome v106 as google has
+        <br> implemented a fix to the management api the chrome
+        <br> webstore uses rending these scripts useless.
+        <br>
+        <br> one liner / local bookmarklet fix sourced from: <a href="https://xfanatical.com/blog/block-student-bookmarklets">Xfanatical</a>
         <br>
         <br> Any questions that you may have you may contact me at:
         <ul>
