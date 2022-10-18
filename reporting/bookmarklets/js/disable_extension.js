@@ -1,5 +1,5 @@
 function confirmbox() {
-    if (confirm("This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script. This will only work on a chrome webstore tab!")) {
+    if (confirm("This script is only meant to be used for reporting purposes to Gilbert Public Schools, not for student use. Click OK to continue running script.")) {
         function m() {
             var r='',c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
             for ( var i = 0; i < 5; i++ ) {
