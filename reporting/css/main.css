@@ -7,4 +7,5 @@ body {
 
 .main {
     grid-area: center;
+    display: flex;
 }
