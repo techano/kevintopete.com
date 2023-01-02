@@ -2,5 +2,5 @@ User-Agent: *
 Allow: /index.html
 Disallow: /css
 Disallow: /images
+Disallow: /cron
 Disallow: /privacy.html
-
